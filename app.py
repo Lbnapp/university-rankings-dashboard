@@ -3,7 +3,7 @@ import plotly.express as px
 import pandas as pd
 
 def load_data():
-    df = pd.read_csv('/Users/alarab/Desktop/World University Rankings 2023.csv')
+    df = pd.read_csv('./World University Rankings 2023.csv')
 
     # Ensuring that there are no NaN values in the specific columns
     df = df.dropna(subset=['University Rank', 'OverAll Score', 'Research Score', 'Location', 'Name of University'])
